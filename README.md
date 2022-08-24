@@ -10,7 +10,7 @@ After created Kafka **broker** then create a **consumer** and a **producer** by 
 
 Create a Spring Boot project name **Kafka demo service** and add Kafka dependency (in this case use **Gradle** project)
 
-```properties
+```java
 dependencies {
 	...
 	implementation 'org.springframework.kafka:spring-kafka'
