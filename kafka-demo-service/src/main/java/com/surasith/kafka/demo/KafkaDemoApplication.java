@@ -33,10 +33,10 @@ public class KafkaDemoApplication {
 		System.out.println("message received: " + message);
 	}
 
-//	@Bean
-//	public ApplicationRunner runner(KafkaTemplate<String, String> template) {
-//		return args -> {
-//			template.send(TOPIC_NAME, "test message at bootstrap");
-//		};
-//	}
+	@Bean
+	public ApplicationRunner runner(KafkaTemplate<String, String> template) {
+		return args -> {
+			template.send(TOPIC_NAME, "test message at bootstrap");
+		};
+	}
 }
