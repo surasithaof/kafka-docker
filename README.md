@@ -69,7 +69,7 @@ public class KafkaController {
 
 ## Step 4
 
-Add the configuration in `applicaiton.properties` file to connect to Kafka broker 
+Add the configuration in `applicaiton.properties` file to connect to Kafka broker
 
 ```java
 #Server configuration
@@ -97,3 +97,21 @@ message received: Hello Kafka!
 ```
 
 Credit : [Spring Boot Kafka example](https://marco.dev/spring-boot-kafka-tutorial)
+
+## Example Kafka docker compose
+
+[conduktor/kafka-stack-docker-compose](https://github.com/conduktor/kafka-stack-docker-compose)
+
+## Broker configuration
+
+- [Kafka Broker Configurations for Confluent Platform](https://docs.confluent.io/platform/current/installation/configuration/broker-configs.html)
+- [Custom MSK configurations](https://docs.aws.amazon.com/msk/latest/developerguide/msk-configuration-properties.html)
+
+## Founding issues
+
+### offsets retention
+
+- [Apache Kafka Consumer Group offset Retention](https://praveenganesh.medium.com/apache-kafka-consumer-group-offset-retention-bfe21285033a)
+- [Problems with the retention period for offset topic of kafka](https://stackoverflow.com/questions/42546501/problems-with-the-retention-period-for-offset-topic-of-kafka)
+- [Kafka consumer group offset retention](https://stackoverflow.com/questions/36977071/kafka-consumer-group-offset-retention)
+- [Difference between retention configuration offsets.retention.minutes and log.retention.minutes](https://stackoverflow.com/questions/49027929/difference-between-retention-configuration-offsets-retention-minutes-and-log-ret)
